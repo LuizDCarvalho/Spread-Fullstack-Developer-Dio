@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5.2-Align content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            border:  2px solid black;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .between{
+            align-content: space-between;
+        }
+        .around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Olá Mundo</div>
+        <div class="item">Tó aprendendo</div>
+        <div class="item">Tó só existindo</div>
+        <div class="item">Tá dificil</div>
+        <div class="item">Quero realizar meus sonhos</div>
+        <div class="item">Tó quebrando aos poucos mano</div>
+        <div class="item">Tó caindo e caindo e caindo em caos</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Olá Mundo</div>
+        <div class="item">Tó aprendendo</div>
+        <div class="item">Tó só existindo</div>
+        <div class="item">Tá dificil</div>
+        <div class="item">Quero realizar meus sonhos</div>
+        <div class="item">Tó quebrando aos poucos mano</div>
+        <div class="item">Tó caindo e caindo e caindo em caos</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Olá Mundo</div>
+        <div class="item">Tó aprendendo</div>
+        <div class="item">Tó só existindo</div>
+        <div class="item">Tá dificil</div>
+        <div class="item">Quero realizar meus sonhos</div>
+        <div class="item">Tó quebrando aos poucos mano</div>
+        <div class="item">Tó caindo e caindo e caindo em caos</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Olá Mundo</div>
+        <div class="item">Tó aprendendo</div>
+        <div class="item">Tó só existindo</div>
+        <div class="item">Tá dificil</div>
+        <div class="item">Quero realizar meus sonhos</div>
+        <div class="item">Tó quebrando aos poucos mano</div>
+        <div class="item">Tó caindo e caindo e caindo em caos</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container between">
+        <div class="item">Olá Mundo</div>
+        <div class="item">Tó aprendendo</div>
+        <div class="item">Tó só existindo</div>
+        <div class="item">Tá dificil</div>
+        <div class="item">Quero realizar meus sonhos</div>
+        <div class="item">Tó quebrando aos poucos mano</div>
+        <div class="item">Tó caindo e caindo e caindo em caos</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container araound">
+        <div class="item">Olá Mundo</div>
+        <div class="item">Tó aprendendo</div>
+        <div class="item">Tó só existindo</div>
+        <div class="item">Tá dificil</div>
+        <div class="item">Quero realizar meus sonhos</div>
+        <div class="item">Tó quebrando aos poucos mano</div>
+        <div class="item">Tó caindo e caindo e caindo em caos</div>
+    </div>
+</body>
+</html>
+
+<!-- Align-Content
+É a propriedade responsável por tratar o alinhamento das linhas
+do container em relação ao eixo vertical do container.
+
+Precisamos que:
+1) O container utilize quebra de linhas.
+2) A altura do container seja maior que a soma das linhas dos itens.
+
+    Tipos de alinhamento:
+1)center: alinhamento dos itens ao centro.
+2)strech: padrão, e os flex itens cresçam igualmente.
+3)flex-start:alihamento dos itens no inicio.
+4)flex-end:alinhamento dos itens no final.
+5)space-between: cria uma espaçamento igual entre os elementos.
+6)space-around: os espaçamentos do meio são
+duas vezes maiores que o inicial e final.
+-->

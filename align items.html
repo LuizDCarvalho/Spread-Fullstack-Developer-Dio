@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5-Align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .base{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 400px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>Center</p>
+    <section class="container center">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2</div>
+        <div class="item">Algum texto aqui 3</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container  center stretch">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container  start">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container  end">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container  base">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+
+    <h1>column</h1>
+    <p>Center</p>
+    <section class="container center column">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2</div>
+        <div class="item">Algum texto aqui 3</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container  center stretch column">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container  start column">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container  end column">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container  base column">
+        <div class="item">Algum texto aqui 1</div>
+        <div class="item">Algum texto aqui 2 mais texto</div>
+        <div class="item">Algum texto aqui 3 mais texto</div>
+    </section>
+    <p>alinhamento de texto no centro</p>
+    <section class="container central center">
+        <div class="item">Ta muito dificil essa vida mano.      
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- Align-items
+Trata do alinhamento dos flex itens de acordo com o eixo do container.
+O alinhamento é diferente para quando os itens estão em colunas ou linhas.
+Permite o alinhamento central no eixo vertical.
+
+    Tipos de alinhamento
+1)center: alinhamento dos itens ao centro.
+2)strech: padrão, e os flex itens cresçam igualmente.
+3)flex-start:alihamento dos itens no inicio.
+4)flex-end:alinhamento dos itens no final.
+5)baseline: alinhamento de acordo com a linha base da tipografia dos itens.
+-->
